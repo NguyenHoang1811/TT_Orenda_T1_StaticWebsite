@@ -268,15 +268,15 @@ footer .call svg {
     height: auto;
 }
 
-.hot_new{
+/* .hot_new{
     width:100%;
-}
+} */
 
 .ohters_new{
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:20px;
-    width:100%;
+    /* width:100%; */
 }
 .hot_new img,
 .new_items img{
