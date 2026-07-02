@@ -1,29 +1,23 @@
-nav {
-    background-color: #3580DB;
+.navbar {
+    background: #3580DB;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-.menu>ul {
-    height: 50px;
+.navbar-nav .nav-link{
+    color:#fff;
+    padding:15px 18px;
 }
 
-.menu>ul>li>a {
-    color: #fff;
-    height: 50px;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-}
-
-.menu>ul>li>a:hover {
-    color: #fff;
-    background-color: #2A50AA;
+.navbar-nav .nav-link:hover{
+    background:#2A50AA;
+    color:#fff;
 }
 
 .search {
+    display: flex;
+    align-items: center;
     background-color: #2A50AA;
     color: #fff;
     height: 50px;
@@ -32,13 +26,12 @@ nav {
 .banner {
     position: relative;
     width: 100%;
-    height: 400px;
+    overflow: hidden;
 }
 
 .banner .bg {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
 }
 
 .banner .bg_text {
@@ -46,6 +39,12 @@ nav {
     top: 50%;
     left: 35%;
     transform: translate(-50%, -50%);
+}
+
+.banner .bg_text img{
+    width:45%;
+    max-width:550px;
+    height:auto;
 }
 
 footer {
@@ -115,17 +114,20 @@ footer {
     margin-top: 20px;
 }
 
-.service-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+.service-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
 }
 
 .service-item {
-    padding: 20px;
+    padding: 25px;
     background-color: #fff;
     text-align: justify;
-    width: 300px;
+}
+
+.service-item svg{
+    margin-bottom:20px;
 }
 
 .service_contact {
@@ -140,8 +142,9 @@ footer {
 }
 
 .img_about {
-    width: 700px;
-    height: 510px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .border_silver {
@@ -314,4 +317,46 @@ footer {
     border-radius: 10px;
     margin-right: 10px;
     border: 1px slolid #E4E8ED;
+}
+
+@media (max-width: 768px) {
+
+    .header_wc{
+        text-align:center;
+        margin-bottom:15px;
+        font-size:14px;
+    }
+
+    .contact{
+        margin-bottom:10px;
+    }
+
+    .header_tittle>div{
+        margin-bottom:20px;
+    }
+
+    .address,
+    .working_time,
+    .hotline{
+        justify-content:start;
+    }
+    
+    .navbar-nav{
+        padding:15px 0;
+    }
+
+    .navbar-nav .nav-link{
+        padding:12px 20px;
+    }
+
+    .search{
+        justify-content:center;
+        width:100%;
+    }
+
+    .banner .bg_text img{
+        width:80%;
+    }
+
+    
 }
