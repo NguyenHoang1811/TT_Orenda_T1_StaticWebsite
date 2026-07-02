@@ -50,11 +50,19 @@
 footer {
     background-color: #3580DB;
     color: #fff;
-    height: 400px;
+    min-height: 400px;
+    padding: 60px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+footer .call svg {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    display: block;
 }
 
 .calender_bg {
@@ -193,7 +201,7 @@ footer {
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 210px;
+    width: 100%;
 }
 
 .medicine_text {
@@ -220,19 +228,63 @@ footer {
     cursor: pointer;
 }
 
+.doctor_items>img{
+    width: 100%;
+
+}
+
 .advantages {
     background-color: #316EC9;
 }
 
-.hot_new {
-    width: 600px;
+.advantage_img>img{
+    width: 100%;
 }
 
-.ohters_new {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    gap: 20px;
+.partner_desc {
+    width: 931px;
+    max-width: 100%;
+}
+
+.partner_logos {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partner_logos > div {
+    width: 150px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.partner_logos img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.hot_new{
+    width:100%;
+}
+
+.ohters_new{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:20px;
+    width:100%;
+}
+.hot_new img,
+.new_items img{
+
+    width:100%;
+    height:auto;
+    display:block;
+
 }
 
 .more_new {
@@ -285,6 +337,11 @@ footer {
     z-index: 2;
 }
 
+.doctor_booking img {
+    max-width: 100%;
+    height: auto;
+}
+
 .booking_container {
     height: 100%;
     display: flex;
@@ -300,7 +357,8 @@ footer {
     position: absolute;
     right: 180px;
     z-index: 1;
-
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .btn_register {
@@ -317,6 +375,66 @@ footer {
     border-radius: 10px;
     margin-right: 10px;
     border: 1px slolid #E4E8ED;
+}
+
+@media(max-width:992px){
+
+    .medicine_box{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    footer {
+        padding: 50px 0 90px;
+    }
+
+    .footer_wt {
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .call {
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: -40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .call svg {
+        max-width: 220px;
+    }
+
+    .booking_now {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .booking_container {
+        height: auto;
+    }
+
+    .booking_now .row {
+        position: relative;
+        min-height: 480px;
+    }
+
+    .doctor_booking {
+        left: 20px;
+        width: 35%;
+    }
+
+    .booking_form {
+        right: 20px;
+        width: 55%;
+        height: auto;
+        min-height: 350px;
+        padding: 20px 15px;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -358,5 +476,92 @@ footer {
         width:80%;
     }
 
-    
+    .medicine_box{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hot_new{
+        margin-bottom:30px;
+    }
+
+    .ohters_new{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .new_items{
+
+        margin-bottom:20px;
+
+    }
+
+    .booking_now {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .booking_now .row {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctor_booking {
+        position: static;
+        width: 60%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .booking_form {
+        position: static;
+        width: 90%;
+        height: auto;
+        min-height: 0;
+        padding: 25px 15px;
+        margin: 0 auto;
+    }
+
+    .booking_email {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .partner_logos > div {
+        width: 100px;
+        height: 60px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 0 100px;
+    }
+
+    footer .row > div {
+        margin-bottom: 30px;
+    }
+
+    footer .row > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer_box {
+        padding-top: 30px;
+    }
+
+    .footer_wt {
+        width: 100%;
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .call {
+        bottom: -50px;
+    }
+
+    .call svg {
+        max-width: 180px;
+    }
 }
