@@ -5,14 +5,14 @@
     z-index: 1000;
 }
 
-.navbar-nav .nav-link{
-    color:#fff;
-    padding:15px 18px;
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 15px 18px;
 }
 
-.navbar-nav .nav-link:hover{
-    background:#2A50AA;
-    color:#fff;
+.navbar-nav .nav-link:hover {
+    background: #2A50AA;
+    color: #fff;
 }
 
 .search {
@@ -41,17 +41,17 @@
     transform: translate(-50%, -50%);
 }
 
-.banner .bg_text img{
-    width:45%;
-    max-width:550px;
-    height:auto;
+.banner .bg_text img {
+    width: 45%;
+    max-width: 550px;
+    height: auto;
 }
 
 footer {
     background-color: #3580DB;
     color: #fff;
     min-height: 400px;
-    padding: 60px 0;
+    padding: 60px 0 140px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -92,6 +92,7 @@ footer .call svg {
     padding-top: 40px;
 }
 
+
 .footer_box {
     position: relative;
     width: 100%;
@@ -101,9 +102,11 @@ footer .call svg {
 .call {
     position: absolute;
     left: 20px;
-    top: 250px;
+    bottom: 20px;
     z-index: 100;
 }
+
+
 
 .service {
     padding: 50px 0;
@@ -122,30 +125,30 @@ footer .call svg {
     margin-top: 20px;
 }
 
-.service-list{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .service-item {
     padding: 25px;
     background-color: #fff;
     text-align: justify;
+    width: 100%;
 }
 
-.service-item svg{
-    margin-bottom:20px;
+.service-item svg {
+    margin-bottom: 20px;
 }
 
 .service_contact {
     position: fixed;
     top: 50%;
-    right: 0;
+    right: 20px;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    padding-right: 20px;
     z-index: 1000;
 }
 
@@ -228,7 +231,7 @@ footer .call svg {
     cursor: pointer;
 }
 
-.doctor_items>img{
+.doctor_items>img {
     width: 100%;
 
 }
@@ -237,7 +240,29 @@ footer .call svg {
     background-color: #316EC9;
 }
 
-.advantage_img>img{
+
+.advantages .d-flex.align-items-center .advantage-text,
+[style*="width: 600px;"] {
+    width: auto !important;
+    max-width: 100% !important;
+    min-width: 0;
+}
+
+.advantage_item {
+    flex-wrap: nowrap;
+}
+
+.advantage_item .rounded-circle {
+    flex-shrink: 0;
+}
+
+.advantage_text {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+
+.advantage_img>img {
     width: 100%;
 }
 
@@ -251,7 +276,7 @@ footer .call svg {
     justify-content: center;
 }
 
-.partner_logos > div {
+.partner_logos>div {
     width: 150px;
     height: 80px;
     display: flex;
@@ -272,18 +297,19 @@ footer .call svg {
     width:100%;
 } */
 
-.ohters_new{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(0,1fr));
-    gap:20px;
+.ohters_new {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
     /* width:100%; */
 }
-.hot_new img,
-.new_items img{
 
-    width:100%;
-    height:auto;
-    display:block;
+.hot_new img,
+.new_items img {
+
+    width: 100%;
+    height: auto;
+    display: block;
 
 }
 
@@ -298,7 +324,7 @@ footer .call svg {
     background-color: #F0F8FF;
 }
 
-.question_title{
+.question_title {
     cursor: pointer;
 }
 
@@ -332,9 +358,11 @@ footer .call svg {
 }
 
 .doctor_booking {
-    position: absolute;
-    left: 180px;
+    position: relative;
     z-index: 2;
+    flex: 1 1 320px;
+    max-width: 500px;
+    text-align: center;
 }
 
 .doctor_booking img {
@@ -349,16 +377,28 @@ footer .call svg {
     position: relative;
 }
 
+.booking_container .row {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
 .booking_form {
     border-radius: 30px;
     background-color: #fff;
-    width: 500px;
-    height: 350px;
-    position: absolute;
-    right: 180px;
+    flex: 1 1 320px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    min-height: 350px;
+    position: relative;
     z-index: 1;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .btn_register {
@@ -377,27 +417,78 @@ footer .call svg {
     border: 1px slolid #E4E8ED;
 }
 
-@media(max-width:992px){
+.about_banner {
+    background-image: url(../images/about_banner_bg.png);
+    height: 300px;
+    background-repeat: no-repeat;
+}
 
-    .medicine_box{
-        grid-template-columns:repeat(3,1fr);
+.about_addtitude {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.img_infor_container {
+    position: relative;
+    min-height: 400px;
+}
+
+.img_infor {
+    border: 2px solid white;
+    position: absolute;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.img_infor_1 {
+    top: 10px;
+    right: 20px;
+}
+
+.img_infor_2 {
+    top: 80px;
+    left: 100px;
+}
+
+.about_slider_bar {
+    background-image: url(../images/about_slider_bar_bg.png);
+    height: 100%;
+}
+
+@media(max-width:1200px) {
+    .medicine_box {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .call {
+        left: 5px;
+        bottom: 1px;
+
+    }
+}
+
+@media(max-width:992px) {
+
+    .medicine_box {
+        grid-template-columns: repeat(3, 1fr);
     }
 
     footer {
-        padding: 50px 0 90px;
+        padding: 50px 0 60px;
     }
 
     .footer_wt {
         width: 100%;
         height: auto;
-        padding-bottom: 20px;
+        padding: 50px 0 150px;
     }
 
     .call {
         left: 0;
         right: 0;
         top: auto;
-        bottom: -40px;
+        bottom: 1px;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -405,7 +496,7 @@ footer .call svg {
     }
 
     .call svg {
-        max-width: 220px;
+        max-width: 100px;
     }
 
     .booking_now {
@@ -417,82 +508,73 @@ footer .call svg {
         height: auto;
     }
 
-    .booking_now .row {
-        position: relative;
-        min-height: 480px;
-    }
-
-    .doctor_booking {
-        left: 20px;
-        width: 35%;
-    }
-
-    .booking_form {
-        right: 20px;
-        width: 55%;
-        height: auto;
-        min-height: 350px;
-        padding: 20px 15px;
-    }
-
 }
 
 @media (max-width: 768px) {
 
-    .header_wc{
-        text-align:center;
-        margin-bottom:15px;
-        font-size:14px;
+    .header_wc {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 
-    .contact{
-        margin-bottom:10px;
+    .contact {
+        margin-bottom: 10px;
     }
 
-    .header_tittle>div{
-        margin-bottom:20px;
+    .service_contact svg {
+        width: 50px;
+        height: auto;
+    }
+
+    .service_contact {
+        right: 10px;
+    }
+
+    .header_tittle>div {
+        margin-bottom: 20px;
     }
 
     .address,
     .working_time,
-    .hotline{
-        justify-content:start;
-    }
-    
-    .navbar-nav{
-        padding:15px 0;
+    .hotline {
+        justify-content: start;
     }
 
-    .navbar-nav .nav-link{
-        padding:12px 20px;
+    .navbar-nav {
+        padding: 15px 0;
     }
 
-    .search{
-        justify-content:center;
-        width:100%;
+    .navbar-nav .nav-link {
+        padding: 12px 20px;
     }
 
-    .banner .bg_text img{
-        width:80%;
+    .search {
+        justify-content: center;
+        width: 100%;
     }
 
-    .medicine_box{
-        grid-template-columns:repeat(2,1fr);
+    .banner .bg_text img {
+        width: 80%;
     }
 
-    .hot_new{
-        margin-bottom:30px;
+    .medicine_box {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .ohters_new{
+    .hot_new {
+        margin-bottom: 30px;
+    }
 
-        grid-template-columns:1fr;
+    .ohters_new {
+
+        grid-template-columns: 1fr;
 
     }
 
-    .new_items{
+    .new_items {
 
-        margin-bottom:20px;
+        margin-bottom: 20px;
 
     }
 
@@ -501,27 +583,14 @@ footer .call svg {
         padding: 30px 0;
     }
 
-    .booking_now .row {
-        min-height: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .doctor_booking {
-        position: static;
         width: 60%;
-        margin-bottom: 20px;
-        text-align: center;
     }
 
     .booking_form {
-        position: static;
         width: 90%;
-        height: auto;
         min-height: 0;
         padding: 25px 15px;
-        margin: 0 auto;
     }
 
     .booking_email {
@@ -529,21 +598,21 @@ footer .call svg {
         max-width: 250px;
     }
 
-    .partner_logos > div {
+    .partner_logos>div {
         width: 100px;
         height: 60px;
     }
 
     footer {
         text-align: center;
-        padding: 40px 0 100px;
+        padding: 40px 0 130px;
     }
 
-    footer .row > div {
+    footer .row>div {
         margin-bottom: 30px;
     }
 
-    footer .row > div:last-child {
+    footer .row>div:last-child {
         margin-bottom: 0;
     }
 
@@ -558,10 +627,25 @@ footer .call svg {
     }
 
     .call {
-        bottom: -50px;
+        bottom: 15px;
     }
 
     .call svg {
         max-width: 180px;
+    }
+}
+
+@media(max-width: 576px) {
+    .medicine_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .service_contact {
+        right: 5px;
+    }
+
+    .service_contact svg {
+        width: 42px;
+        height: auto;
     }
 }
