@@ -87,9 +87,15 @@ footer .call svg {
     background-color: #316EC9;
     border-radius: 10px;
     width: 80%;
-    height: 280px;
+    min-height: 280px;
+    height: auto;
     margin: 0 auto;
     padding-top: 40px;
+}
+
+.footer_wt .border_silver>div {
+    white-space: nowrap;
+    border-color: #3580DB;
 }
 
 
@@ -536,8 +542,259 @@ footer .call svg {
     display: block;
 }
 
-.about_event{
+.about_event {
     background-color: #F0F8FF;
+}
+
+.clinic_banner_bg_1 {
+    position: relative;
+}
+
+.clinic_banner_text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 2;
+
+}
+
+.clinic_banner_text p {
+    max-width: 70%;
+}
+
+.clinic_banner_text .rounded-circle {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinic_banner_advice_text {
+    padding: 10px 20px;
+    color: #388FF3;
+    border-radius: 30px;
+    background-color: #F0F8FF;
+    width: fit-content;
+}
+
+.clinic_baner_advantges {
+    border-radius: 30px;
+    border: 1px solid #E4E8ED;
+}
+
+.clinic_promotion {
+    background-color: #F0F8FF;
+}
+
+.clinic_reason {
+    background-color: #2A50AA;
+}
+
+.clinic_reason_item {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 16px;
+    position: relative;
+    padding: 10px 20px;
+
+}
+
+.clinic_reason_item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    padding: 1px;
+
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 30%);
+
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    pointer-events: none;
+}
+
+.pharmacy_action {
+    background-color: #F0F8FF;
+    border-radius: 5px;
+}
+
+.price-btn {
+    background-color: #fff;
+    border: 1px solid #E4E8ED;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.pharmacy_action{
+    height: fit-content;
+}
+
+.order_btn {
+    border: 1px solid #E4E8ED;
+    border-radius: 16px;
+    padding: 5px 10px;
+}
+.order_btn:active {
+    border: 1px solid #3580DB;
+    border-radius: 16px;
+}
+
+.medicine.medicine-4-cols .medicine_box {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px;
+}
+
+.medicine.medicine-4-cols {
+    background-color: #fff !important;
+}
+
+.medicine.medicine-4-cols .medicine_items {
+    width: 100%;
+    min-width: 0;
+
+}
+
+.medicine_detail_box{
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.medicine_detail_img_list_item{
+     border: 1px solid #E4E8ED;
+     border-radius: 10px;
+     padding: 10px;
+}
+
+.medicine_detail_img_list_item:active{
+     border: 1px solid #3580DB;
+}
+
+.medicine_detail_description{
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+.medicine_detail_description_list{
+    border-bottom: 1px solid #EDF0F3;
+    width: 100%;
+    padding: 15px 20px;
+
+}
+
+.medicine_detail_description_list:hover{
+    background-color: #EDF0F3;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+.medicine_detail_description_tittle{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.medicine_detail_description_text{
+    font-size: 20px;
+}
+
+.news_detail_main ul li{
+   padding: 10px;
+}
+
+.news_detail_main ul li::marker{
+    color: #3580DB;
+    font-size: 18px;
+}
+
+.news_detail_others{
+    background-color: #EDF0F3;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.comment_input{
+    position: relative;
+    width: 100%;
+}
+
+.comment_input input{
+    width: 100%;
+    height: 50px;
+    padding: 0 45px 0 15px; 
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    outline: none;
+}
+
+.comment_icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+}
+
+.comment-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.comment-avatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#EEF1F5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#666;
+    flex-shrink:0;
+}
+
+.comment-box{
+    background:#F4F5F7;
+    border-radius:18px;
+    padding:10px 15px;
+    display:inline-block;
+}
+
+.comment-name{
+    font-weight:700;
+    margin-right:8px;
+}
+
+.comment-action{
+    display:flex;
+    gap:20px;
+    margin-top:8px;
+    font-size:14px;
+    color:#6B7280;
+}
+
+.reply-toggle{
+    margin-top:10px;
+    color:#555;
+    font-size:15px;
+    cursor:pointer;
+}
+
+.reply-list{
+    margin-top:15px;
+    margin-left:25px;
+    padding-left:25px;
+    border-left:2px solid #E5E7EB;
+}
+
+.news_detial_recenly_tittle{
+    margin-top: 20px;
+    border-bottom: 4px solid #8B7DDE;
+    width: fit-content;
+    padding-bottom: 10px;
 }
 
 @media(max-width:1200px) {
@@ -549,6 +806,10 @@ footer .call svg {
         left: 5px;
         bottom: 1px;
 
+    }
+
+    .footer_wt {
+        width: 100%;
     }
 
     .arrow-left {
@@ -619,6 +880,9 @@ footer .call svg {
     .vision_img1,
     .vision_img3 {
         height: auto;
+    }
+    .medicine.medicine-4-cols .medicine_box {
+        grid-template-columns: repeat(3, 1fr) !important; 
     }
 }
 
@@ -750,6 +1014,62 @@ footer .call svg {
         min-height: 220px;
         padding: 30px 0;
     }
+
+    .clinic_banner_text {
+
+        left: 20px;
+        right: 20px;
+
+        top: 50%;
+        transform: translateY(-50%);
+
+        max-width: 80%;
+    }
+
+    .clinic_banner_text .rounded-circle {
+
+        width: 36px;
+        height: 36px;
+    }
+
+    .clinic_banner_text .h2 {
+
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .clinic_banner_text p {
+
+        font-size: 8px;
+        margin-bottom: 8px;
+    }
+    .medicine.medicine-4-cols .medicine_box {
+        grid-template-columns: repeat(1, 1fr) !important; 
+    }
+    .news_detail_others_content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .news_image{
+        width:100%;
+    }
+
+    .news_image img{
+        height:220px;
+    }
+    .news_detail_others_content{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .news_detail_others_image{
+        width:100%;
+    }
+
+    .news_image img{
+        height:220px;
+    }
 }
 
 @media(max-width: 576px) {
@@ -765,4 +1085,6 @@ footer .call svg {
         width: 42px;
         height: auto;
     }
+
+
 }
