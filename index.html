@@ -7,10 +7,12 @@
 
     <title>Trang chủ</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <header>
         <div class="container mt-3">
             <div class="header_infor row m-auto align-items-center">
-                <div class="header_wc col-lg-9 col-12">
+                <div class="fs_15px align-items-end gap-2 col-lg-9 col-12">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1_5752)">
                             <path
@@ -46,6 +48,7 @@
                     Chào mừng bạn đến với Phòng Khám Tai Mũi
                     Họng chất lượng cao của <b class="text-primary">BS Nguyễn Huy Hiếu</b class>, BS khám và điều trị
                 </div>
+
                 <div class="contact d-flex col-lg-3 col-12 gap-3 justify-content-lg-end justify-content-center">
                     <div class="align-items-center">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -126,7 +129,7 @@
 
                 </div>
 
-                <div class="address d-flex align-items-center col-lg-3 col-md-6 col-12">
+                <div class="address d-flex align-items-center col-lg-4 col-md-6 col-12">
                     <div class="address_logo me-3">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -143,8 +146,9 @@
                     </div>
 
                     <div class="address_text">
-                        <p class="mb-1 fs-6"><b>Địa chỉ phòng khám</b></p>
-                        <p class="mb-0 fs-6">25 Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà Nội</p>
+                        <p class="fs_15px mb-1 fw-semibold">Địa chỉ phòng khám</p>
+                        <p class="fs_13px mb-0" style="color: #677987;">25 Tô Vĩnh Diện, Khương Trung, Thanh Xuân, Hà
+                            Nội</p>
                     </div>
                 </div>
 
@@ -188,12 +192,13 @@
                     </div>
 
                     <div class="working_time_text">
-                        <p class="mb-1 fs-6"><b>Giờ làm việc</b></p>
-                        <p class="mb-0 fs-6">Tất cả các ngày từ 13h30-20h kể cả thứ 7 và chủ nhật</p>
+                        <p class="fs_15px mb-1 fw-semibold">Giờ làm việc</p>
+                        <p class="fs_13px mb-0" style="color: #677987;">Tất cả các ngày từ 13h30-20h kể cả thứ 7 và chủ
+                            nhật</p>
                     </div>
                 </div>
 
-                <div class="hotline d-flex align-items-center col-lg-3 col-md-6 col-12">
+                <div class="hotline d-flex align-items-center col-lg-2 col-md-6 col-12 justify-content-lg-end">
                     <div class="hotline_logo me-3">
                         <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -225,8 +230,8 @@
                     </div>
 
                     <div class="hotline_text ">
-                        <p class="mb-1 fs-6"><b>Hotline tư vấn</b></p>
-                        <p class="mb-0 fs-6">0868.589.154</p>
+                        <p class="fs_15px mb-1 fw-semibold">Hotline tư vấn</p>
+                        <p class="fs_13px mb-0" style="color: #677987;">0868.589.154</p>
                     </div>
                 </div>
 
@@ -248,31 +253,47 @@
                 <ul class="navbar-nav me-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Trang chủ</a>
+                        <a class="nav-link fs_16px" href="#">Trang chủ</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Khám bệnh họng thanh quản</a>
+                        <a class="nav-link fs_16px" href="#">Khám bệnh họng thanh quản</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Khám bệnh mũi xoang</a>
+                        <a class="nav-link fs_16px" href="#">Khám bệnh mũi xoang</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Khám bệnh tai</a>
+                        <a class="nav-link fs_16px" href="#">Khám bệnh tai</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Nâng mũi</a>
+                        <a class="nav-link fs_16px" href="#">Nâng mũi</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tin tức</a>
+                        <a class="nav-link fs_16px" href="#">Tin tức</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
+                        <a class="nav-link fs_16px" href="#">Liên hệ</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link fs_16px dropdown-toggle" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dịch vụ khám
+                        </a>
+                        <ul class="dropdown-menu shadow" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="#">Khám bệnh họng thanh quản</a></li>
+                            <li><a class="dropdown-item" href="#">Khám bệnh mũi xoang</a></li>
+                            <li><a class="dropdown-item" href="#">Khám bệnh tai</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Nâng mũi</a></li>
+                        </ul>
                     </li>
 
                 </ul>
@@ -291,24 +312,31 @@
 
         </div>
     </nav>
+
     <div class="banner">
         <img class="bg" src="assets/images/bg.png" alt="Ảnh giới thiệu">
-        <div class="bg_text container d-flex flex-column justify-content-center align-items-center">
+
+        <div class="bg_text container">
             <img src="assets/images/bg_text.png" alt="Ảnh giới thiệu">
+        </div>
+
+        <div class="banner_bg_bacsi container">
+            <img src="assets/images/bg_bacsi.png" alt="Ảnh giới thiệu">
         </div>
     </div>
 
     <div class="service">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row g-5 align-items-center">
                 <div class="col-lg-5 col-12 mb-4 mb-lg-0">
                     <div class="pt-0 fw-bold" style="color: #3580DB; font-size: 40px;">Dịch vụ nổi bật</div>
                     <div class="pt-0 fw-bold mb-3" style="color: #020B27; font-size: 40px;">
                         tại Medivax
                     </div>
-                    <div style="text-align: justify;">Đội ngũ bác sĩ và nhân viên của chúng tôi luôn sẵn sàng phục vụ
+                    <div style="text-align: justify; font-size: 16px;">Đội ngũ bác sĩ và nhân viên của chúng tôi luôn
+                        sẵn sàng phục vụ
                         bạn.
-                        Chúng tôi là phòng khám một
+                        Chúng tôi là phòng khám mộts
                         cửa (on-stop) chuyên cung cấp tất cả các loại hình xét nghiệm
                         đến các cuộc hẹn tư vấn riêng tư về dự phòng và điều trị các bệnh liên quan đến sức khoẻ tình
                         dục.
@@ -317,7 +345,7 @@
                 </div>
                 <div class="col-lg-7 col-12">
                     <div class="service-list">
-                        <div class="service-item border" style="border-top-left-radius: 30px;">
+                        <div class="service-item border" style="border-top-left-radius: 40px;">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1_6001)">
@@ -339,7 +367,7 @@
                                 Nam.
                             </div>
                         </div>
-                        <div class="service-item border" style="border-top-right-radius: 30px;">
+                        <div class="service-item border" style="border-top-right-radius: 40px;">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1_6011)">
@@ -363,12 +391,12 @@
                                 </defs>
                             </svg>
 
-                            <h4>Xét nghiệm HIV & STI</h4>
-                            <div>Xét nghiệm với những sinh phẩm ứng dụng công nghệ mới nhất được phép lưu hành tại Việt
-                                Nam.
+                            <h4>Điều trị ARV</h4>
+                            <div>Tư vấn, hỗ trợ bạn trong việc tiếp cận phác đồ điều trị HIV tiên tiến nhất được Bộ Y tế
+                                cấp phép.
                             </div>
                         </div>
-                        <div class="service-item border" style="border-bottom-left-radius: 30px;">
+                        <div class="service-item border" style="border-bottom-left-radius: 40px;">
                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -386,12 +414,12 @@
                                 <path d="M8.72852 7.73438H27.0105V9.84445H8.72852V7.73438Z" fill="#3580DB" />
                             </svg>
 
-                            <h4>Xét nghiệm HIV & STI</h4>
-                            <div>Xét nghiệm với những sinh phẩm ứng dụng công nghệ mới nhất được phép lưu hành tại Việt
-                                Nam.
+                            <h4>Dự phòng trước phơi nhiễm HIV PrEP</h4>
+                            <div>Dùng PrEP như một lá chắn bảo vệ hoàn hảo trước HIV, để luôn cảm thấy an toàn và cởi mở
+                                trước những cơ hội tình cảm mới.
                             </div>
                         </div>
-                        <div class="service-item border" style="border-bottom-right-radius: 30px; "">
+                        <div class="service-item border" style="border-bottom-right-radius: 40px; "">
                         <svg width=" 36" height="36" viewBox="0 0 36 36" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -411,9 +439,9 @@
                                 fill="#8B7DDE" />
                             </svg>
 
-                            <h4>Xét nghiệm HIV & STI</h4>
-                            <div>Xét nghiệm với những sinh phẩm ứng dụng công nghệ mới nhất được phép lưu hành tại Việt
-                                Nam.
+                            <h4>Dự phòng sau phơi nhiễm HIV PrEP</h4>
+                            <div>Dùng PrEP như một lá chắn bảo vệ hoàn hảo trước HIV, để luôn cảm thấy an toàn và cởi mở
+                                trước những cơ hội tình cảm mới.
                             </div>
                         </div>
                     </div>
@@ -553,12 +581,23 @@
             </div>
         </div>
         <div class="container mb-5">
-            <img class="mb-4" style="width: 100%;" src="assets/images/free.png" alt="About Us">
-            <div class="d-flex justify-content-center mb-4 gap-2">
-                <div class="rounded-pill" style=" background-color: #3580DB; width: 30px; height: 10px;"></div>
-                <div class="rounded-circle" style=" background-color: #C1C8D1; width: 10px; height: 10px;"></div>
-                <div class="rounded-circle" style=" background-color: #C1C8D1; width: 10px; height: 10px;"></div>
-                <div class="rounded-circle" style=" background-color: #C1C8D1; width: 10px; height: 10px;"></div>
+            <div class="about_slider owl-carousel owl-theme">
+                <div>
+                    <img class="about_slider_item mb-4" style="width: 100%;" src="assets/images/free.png"
+                        alt="About Us">
+                </div>
+                <div>
+                    <img class="about_slider_item mb-4" style="width: 100%;" src="assets/images/free.png"
+                        alt="About Us">
+                </div>
+                <div>
+                    <img class="about_slider_item mb-4" style="width: 100%;" src="assets/images/free.png"
+                        alt="About Us">
+                </div>
+                <div>
+                    <img class="about_slider_item mb-4" style="width: 100%;" src="assets/images/free.png"
+                        alt="About Us">
+                </div>
             </div>
         </div>
     </div>
@@ -767,20 +806,12 @@
 
     <div class="doctor">
         <div class="container my-5">
-            <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex justify-content-sm-start align-items-center mb-3">
                 <h1><b>Đội ngũ bác sĩ</b></h1>
-                <div class="d-flex gap-3">
-                    <div class="arrow border rounded-circle p-2">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                    <div class="arrow border rounded-circle p-2">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
             </div>
             <div class="container px-0">
-                <div class="row">
-                    <div class="doctor_items col-lg-4 col-12 col-md-6 mb-4 d-flex flex-column align-items-center">
+                <div class=" doctor_slider owl-carousel owl-theme">
+                    <div class="doctor_items mb-4 d-flex flex-column align-items-center">
                         <img src="assets/images/bs_1.png" alt="BS">
                         <div class="doctor_name m-2 fs-5"><b>Bs.CKII. Trần Văn Bông</b></div>
                         <div class="positon mb-3">Phó giám đốc</div>
@@ -795,7 +826,7 @@
                             <b>Đặt lịch khám</b>
                         </button>
                     </div>
-                    <div class="doctor_items col-lg-4 col-12 col-md-6 mb-4 d-flex flex-column align-items-center">
+                    <div class="doctor_items mb-4 d-flex flex-column align-items-center">
                         <img src="assets/images/bs_2.png" alt="BS">
                         <div class="doctor_name m-2 fs-5"><b>Bs.CKII. Trần Văn Bông</b></div>
                         <div class="positon mb-3">Phó giám đốc</div>
@@ -810,8 +841,53 @@
                             <b>Đặt lịch khám</b>
                         </button>
                     </div>
-                    <div class="doctor_items col-lg-4 col-12 col-md-6 mb-4 d-flex flex-column align-items-center">
+                    <div class="doctor_items mb-4 d-flex flex-column align-items-center">
                         <img src="assets/images/bs_3.png" alt="BS">
+                        <div class="doctor_name m-2 fs-5"><b>Bs.CKII. Trần Văn Bông</b></div>
+                        <div class="positon mb-3">Phó giám đốc</div>
+                        <button class="btn_booking">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.4109 2.76862L16.4119 3.51824C19.1665 3.73413 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15188 22C5.01119 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50617 3.53024L7.50518 2.78061C7.5042 2.34083 7.83001 2.01 8.26444 2.01C8.69886 2.009 9.02468 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2C16.0742 1.999 16.4099 2.32884 16.4109 2.76862ZM4.52148 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.5877 15.6556 6.5877C15.2212 6.5887 14.8943 6.24887 14.8943 5.81909L14.8934 5.0095L9.02863 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27036 6.5967C7.83594 6.5977 7.50913 6.25887 7.50913 5.82809L7.50815 5.05847C5.58286 5.25137 4.51753 6.38281 4.52049 8.55072L4.52148 8.86157ZM15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043ZM16.0554 17.892C15.6013 17.882 15.235 17.5032 15.234 17.0435C15.2241 16.5837 15.5884 16.2029 16.0426 16.1919H16.0525C16.5165 16.1919 16.8927 16.5707 16.8927 17.0405C16.8937 17.5102 16.5185 17.891 16.0554 17.892ZM11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7903 12.9085 12.425 12.5587 11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203ZM12.0262 17.8471C11.572 17.8671 11.1968 17.5082 11.1761 17.0485C11.1761 16.5887 11.5305 16.2089 11.9847 16.1879C12.429 16.1869 12.7953 16.5367 12.8052 16.9855C12.8259 17.4463 12.4705 17.8261 12.0262 17.8471ZM7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73243 13.3933C8.72256 12.9435 8.35725 12.5937 7.91196 12.5947C7.45779 12.6147 7.10334 12.9955 7.10433 13.4553ZM7.95837 17.8521C7.5042 17.8731 7.12901 17.5132 7.10828 17.0535C7.10729 16.5937 7.46273 16.2129 7.9169 16.1929C8.3612 16.1919 8.7275 16.5417 8.73737 16.9915C8.7581 17.4513 8.40365 17.8321 7.95837 17.8521Z"
+                                    fill="#3580DB" />
+                            </svg>
+
+                            <b>Đặt lịch khám</b>
+                        </button>
+                    </div>
+                    <div class="doctor_items  mb-4 d-flex flex-column align-items-center">
+                        <img src="assets/images/bs_2.png" alt="BS">
+                        <div class="doctor_name m-2 fs-5"><b>Bs.CKII. Trần Văn Bông</b></div>
+                        <div class="positon mb-3">Phó giám đốc</div>
+                        <button class="btn_booking">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.4109 2.76862L16.4119 3.51824C19.1665 3.73413 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15188 22C5.01119 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50617 3.53024L7.50518 2.78061C7.5042 2.34083 7.83001 2.01 8.26444 2.01C8.69886 2.009 9.02468 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2C16.0742 1.999 16.4099 2.32884 16.4109 2.76862ZM4.52148 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.5877 15.6556 6.5877C15.2212 6.5887 14.8943 6.24887 14.8943 5.81909L14.8934 5.0095L9.02863 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27036 6.5967C7.83594 6.5977 7.50913 6.25887 7.50913 5.82809L7.50815 5.05847C5.58286 5.25137 4.51753 6.38281 4.52049 8.55072L4.52148 8.86157ZM15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043ZM16.0554 17.892C15.6013 17.882 15.235 17.5032 15.234 17.0435C15.2241 16.5837 15.5884 16.2029 16.0426 16.1919H16.0525C16.5165 16.1919 16.8927 16.5707 16.8927 17.0405C16.8937 17.5102 16.5185 17.891 16.0554 17.892ZM11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7903 12.9085 12.425 12.5587 11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203ZM12.0262 17.8471C11.572 17.8671 11.1968 17.5082 11.1761 17.0485C11.1761 16.5887 11.5305 16.2089 11.9847 16.1879C12.429 16.1869 12.7953 16.5367 12.8052 16.9855C12.8259 17.4463 12.4705 17.8261 12.0262 17.8471ZM7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73243 13.3933C8.72256 12.9435 8.35725 12.5937 7.91196 12.5947C7.45779 12.6147 7.10334 12.9955 7.10433 13.4553ZM7.95837 17.8521C7.5042 17.8731 7.12901 17.5132 7.10828 17.0535C7.10729 16.5937 7.46273 16.2129 7.9169 16.1929C8.3612 16.1919 8.7275 16.5417 8.73737 16.9915C8.7581 17.4513 8.40365 17.8321 7.95837 17.8521Z"
+                                    fill="#3580DB" />
+                            </svg>
+
+                            <b>Đặt lịch khám</b>
+                        </button>
+                    </div>
+                    <div class="doctor_items mb-4 d-flex flex-column align-items-center">
+                        <img src="assets/images/bs_3.png" alt="BS">
+                        <div class="doctor_name m-2 fs-5"><b>Bs.CKII. Trần Văn Bông</b></div>
+                        <div class="positon mb-3">Phó giám đốc</div>
+                        <button class="btn_booking">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M16.4109 2.76862L16.4119 3.51824C19.1665 3.73413 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15188 22C5.01119 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50617 3.53024L7.50518 2.78061C7.5042 2.34083 7.83001 2.01 8.26444 2.01C8.69886 2.009 9.02468 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2C16.0742 1.999 16.4099 2.32884 16.4109 2.76862ZM4.52148 8.86157L19.4696 8.84158V8.49175C19.4272 6.34283 18.349 5.21539 16.4138 5.04748L16.4148 5.81709C16.4148 6.24688 16.0801 6.5877 15.6556 6.5877C15.2212 6.5887 14.8943 6.24887 14.8943 5.81909L14.8934 5.0095L9.02863 5.01749L9.02962 5.82609C9.02962 6.25687 8.70479 6.5967 8.27036 6.5967C7.83594 6.5977 7.50913 6.25887 7.50913 5.82809L7.50815 5.05847C5.58286 5.25137 4.51753 6.38281 4.52049 8.55072L4.52148 8.86157ZM15.2399 13.4043V13.4153C15.2498 13.8751 15.625 14.2239 16.0801 14.2139C16.5244 14.2029 16.8789 13.8221 16.869 13.3623C16.8483 12.9225 16.4918 12.5637 16.0485 12.5647C15.5944 12.5747 15.2389 12.9445 15.2399 13.4043ZM16.0554 17.892C15.6013 17.882 15.235 17.5032 15.234 17.0435C15.2241 16.5837 15.5884 16.2029 16.0426 16.1919H16.0525C16.5165 16.1919 16.8927 16.5707 16.8927 17.0405C16.8937 17.5102 16.5185 17.891 16.0554 17.892ZM11.1721 13.4203C11.1919 13.8801 11.568 14.2389 12.0222 14.2189C12.4665 14.1979 12.821 13.8181 12.8012 13.3583C12.7903 12.9085 12.425 12.5587 11.9807 12.5597C11.5266 12.5797 11.1711 12.9605 11.1721 13.4203ZM12.0262 17.8471C11.572 17.8671 11.1968 17.5082 11.1761 17.0485C11.1761 16.5887 11.5305 16.2089 11.9847 16.1879C12.429 16.1869 12.7953 16.5367 12.8052 16.9855C12.8259 17.4463 12.4705 17.8261 12.0262 17.8471ZM7.10433 13.4553C7.12408 13.915 7.50025 14.2749 7.95442 14.2539C8.39872 14.2339 8.75317 13.8531 8.73243 13.3933C8.72256 12.9435 8.35725 12.5937 7.91196 12.5947C7.45779 12.6147 7.10334 12.9955 7.10433 13.4553ZM7.95837 17.8521C7.5042 17.8731 7.12901 17.5132 7.10828 17.0535C7.10729 16.5937 7.46273 16.2129 7.9169 16.1929C8.3612 16.1919 8.7275 16.5417 8.73737 16.9915C8.7581 17.4513 8.40365 17.8321 7.95837 17.8521Z"
+                                    fill="#3580DB" />
+                            </svg>
+
+                            <b>Đặt lịch khám</b>
+                        </button>
+                    </div>
+                    <div class="doctor_items mb-4 d-flex flex-column align-items-center">
+                        <img src="assets/images/bs_1.png" alt="BS">
                         <div class="doctor_name m-2 fs-5"><b>Bs.CKII. Trần Văn Bông</b></div>
                         <div class="positon mb-3">Phó giám đốc</div>
                         <button class="btn_booking">
@@ -1362,7 +1438,7 @@
                 <div class="booking_form d-flex flex-column align-items-center ">
                     <b class="fs-4 mt-3">Đăng ký khám trực tuyến</b>
                     <p class="mb-4">Thủ tục đơn giản, hỗ trợ nhanh chóng, tiết kiệm chi phí</p>
-                    <button class="btn_register mb-3" style="width: 250px;">
+                    <button class="btn_register mb-3" style="width: 250px; border-radius: 12px;">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
                                 d="M16.4109 2.76862L16.4119 3.51824C19.1665 3.73413 20.9862 5.61119 20.9891 8.48975L21 16.9155C21.0039 20.054 19.0322 21.985 15.8718 21.99L8.15188 22C5.01119 22.004 3.01482 20.027 3.01087 16.8795L3.00001 8.55272C2.99606 5.65517 4.75153 3.78311 7.50617 3.53024L7.50518 2.78061C7.5042 2.34083 7.83001 2.01 8.26444 2.01C8.69886 2.009 9.02468 2.33883 9.02567 2.77861L9.02666 3.47826L14.8914 3.47027L14.8904 2.77062C14.8894 2.33084 15.2152 2.001 15.6497 2C16.0742 1.999 16.4099 2.32884 16.4109 2.76862ZM4.52146 8.86183L19.4696 8.84184V8.49202C19.4272 6.3431 18.349 5.21566 16.4138 5.04774L16.4148 5.81736C16.4148 6.24714 16.0801 6.58797 15.6556 6.58797C15.2211 6.58897 14.8943 6.24914 14.8943 5.81936L14.8933 5.00976L9.02862 5.01776L9.0296 5.82635C9.0296 6.25714 8.70477 6.59697 8.27035 6.59697C7.83592 6.59797 7.50912 6.25914 7.50912 5.82835L7.50813 5.05874C5.58284 5.25164 4.51751 6.38308 4.52048 8.55099L4.52146 8.86183ZM15.2399 13.405V13.416C15.2498 13.8758 15.625 14.2246 16.0801 14.2146C16.5244 14.2036 16.8789 13.8228 16.869 13.363C16.8483 12.9233 16.4918 12.5644 16.0485 12.5654C15.5943 12.5754 15.2389 12.9452 15.2399 13.405ZM16.0554 17.8923C15.6013 17.8823 15.235 17.5035 15.234 17.0437C15.2241 16.584 15.5884 16.2032 16.0426 16.1922H16.0525C16.5165 16.1922 16.8927 16.571 16.8927 17.0407C16.8937 17.5105 16.5185 17.8913 16.0554 17.8923ZM11.1721 13.4201C11.1919 13.8799 11.568 14.2387 12.0222 14.2187C12.4665 14.1978 12.821 13.8179 12.8012 13.3582C12.7903 12.9084 12.425 12.5586 11.9807 12.5596C11.5266 12.5796 11.1711 12.9604 11.1721 13.4201ZM12.0261 17.8476C11.572 17.8676 11.1968 17.5088 11.176 17.049C11.176 16.5893 11.5305 16.2095 11.9847 16.1885C12.429 16.1875 12.7953 16.5373 12.8051 16.9861C12.8259 17.4468 12.4704 17.8267 12.0261 17.8476ZM7.10431 13.4555C7.12406 13.9153 7.50023 14.2751 7.9544 14.2541C8.3987 14.2341 8.75315 13.8533 8.73242 13.3936C8.72254 12.9438 8.35723 12.594 7.91195 12.595C7.45778 12.615 7.10333 12.9958 7.10431 13.4555ZM7.95836 17.8525C7.50419 17.8735 7.12901 17.5137 7.10827 17.0539C7.10728 16.5942 7.46272 16.2133 7.91689 16.1934C8.36119 16.1924 8.72749 16.5422 8.73736 16.992C8.7581 17.4517 8.40365 17.8325 7.95836 17.8525Z"
@@ -1373,8 +1449,9 @@
                     <hr class="w-100">
                     <b class="fs-4 mt-2 mb-4">Bạn cần được tư vấn</b>
                     <div class="d-flex">
-                        <input class="booking_email" type="email" placeholder="Nhập email của bạn">
-                        <button class="btn_register">Đăng ký</button>
+                        <input class="booking_email" type="email" placeholder="Nhập email của bạn"
+                            style="border-radius: 8px; border: 1px solid #E4E8ED;">
+                        <button class="btn_register" style="border-radius: 8px;">Đăng ký</button>
                     </div>
                 </div>
             </div>
@@ -1382,13 +1459,13 @@
     </div>
 
     <div class="partner">
-        <div class="container d-flex flex-column  align-items-center mt-4">
+        <div class="container mt-4">
             <h1 class="text-center py-2 ">Đối tác của chúng tôi</h1>
-            <div class="text-center partner_desc">Chúng tôi đã tham gia hợp tác với nhiều đối tác trong và
+            <div class="text-center m-auto partner_desc">Chúng tôi đã tham gia hợp tác với nhiều đối tác trong và
                 ngoài nước để tạo ra những giải pháp
                 có ý nghĩa, mang đến chất lượng cuộc sống tốt hơn cho cộng đồng.</div>
 
-            <div class="d-flex gap-2 my-4 partner_logos">
+            <div class="partner_slider owl-carousel owl-theme my-4 partner_logos">
                 <div class="border rounded">
                     <img src="assets/images/partner_1.png" alt="anh">
                 </div>
@@ -1404,12 +1481,15 @@
                 <div class="border rounded-1">
                     <img src="assets/images/partner_5.png" alt="anh">
                 </div>
-            </div>
-            <div class="d-flex justify-content-center mb-5 gap-2">
-                <div class="rounded-pill" style=" background-color: #3580DB; width: 30px; height: 10px;"></div>
-                <div class="rounded-circle" style=" background-color: #C1C8D1; width: 10px; height: 10px;"></div>
-                <div class="rounded-circle" style=" background-color: #C1C8D1; width: 10px; height: 10px;"></div>
-                <div class="rounded-circle" style=" background-color: #C1C8D1; width: 10px; height: 10px;"></div>
+                <div class="border rounded-1">
+                    <img src="assets/images/partner_3.png" alt="anh">
+                </div>
+                <div class="border rounded-1">
+                    <img src="assets/images/partner_4.png" alt="anh">
+                </div>
+                <div class="border rounded-1">
+                    <img src="assets/images/partner_5.png" alt="anh">
+                </div>
             </div>
         </div>
     </div>
@@ -1692,13 +1772,14 @@
         </div>
         <div class="d-flex flex-column gap-3 align-items-center" style="position: absolute;right: 15px; bottom: 50px;">
             <div>
-                <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="48" height="48" rx="24" fill="#E2E8F0" />
-                    <path
-                        d="M23.4396 16.8062L18.2303 22.0154C18.0816 22.1641 18 22.3622 18 22.5736C18 22.7851 18.0817 22.9832 18.2303 23.1319L18.7034 23.6048C18.8518 23.7534 19.0502 23.8353 19.2616 23.8353C19.4729 23.8353 19.6779 23.7534 19.8264 23.6048L22.872 20.5659V30.2207C22.872 30.656 23.2128 31 23.6482 31H24.317C24.7524 31 25.1276 30.656 25.1276 30.2207V20.5314L28.1902 23.6047C28.3389 23.7533 28.5318 23.8352 28.7432 23.8352C28.9544 23.8352 29.1501 23.7533 29.2987 23.6047L29.7703 23.1318C29.919 22.9831 30 22.785 30 22.5734C30 22.3621 29.9179 22.1639 29.7692 22.0152L24.5601 16.8061C24.4109 16.6571 24.2118 16.5751 24.0001 16.5757C23.7877 16.5752 23.5885 16.6571 23.4396 16.8062Z"
-                        fill="#718096" />
-                </svg>
-
+                <button class="btn btn-lg" type="button" id="backToTop" title="Lên đầu trang">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" rx="24" fill="#E2E8F0" />
+                        <path
+                            d="M23.4396 16.8062L18.2303 22.0154C18.0816 22.1641 18 22.3622 18 22.5736C18 22.7851 18.0817 22.9832 18.2303 23.1319L18.7034 23.6048C18.8518 23.7534 19.0502 23.8353 19.2616 23.8353C19.4729 23.8353 19.6779 23.7534 19.8264 23.6048L22.872 20.5659V30.2207C22.872 30.656 23.2128 31 23.6482 31H24.317C24.7524 31 25.1276 30.656 25.1276 30.2207V20.5314L28.1902 23.6047C28.3389 23.7533 28.5318 23.8352 28.7432 23.8352C28.9544 23.8352 29.1501 23.7533 29.2987 23.6047L29.7703 23.1318C29.919 22.9831 30 22.785 30 22.5734C30 22.3621 29.9179 22.1639 29.7692 22.0152L24.5601 16.8061C24.4109 16.6571 24.2118 16.5751 24.0001 16.5757C23.7877 16.5752 23.5885 16.6571 23.4396 16.8062Z"
+                            fill="#718096" />
+                    </svg>
+                </button>
             </div>
             <div>
                 <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1714,14 +1795,29 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
-        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+
+        let mybutton = document.getElementById("backToTop");
+        if (mybutton) {
+            mybutton.addEventListener("click", backToTop);
+        }
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
         $(document).ready(function () {
 
-            $(".question_title").click(function () {
 
+            $(".question_title").click(function () {
                 $(".question_answer")
                     .not($(this).next())
                     .slideUp(300);
@@ -1731,15 +1827,73 @@
                     .addClass("fa-angle-down");
 
                 $(this).next(".question_answer").slideToggle(300);
-
-
                 $(this).find("i").toggleClass("fa-angle-down fa-angle-up");
+            });
 
+
+            $('.about_slider').owlCarousel({
+                loop: true,
+                margin: 5,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 1
+                    },
+                    1024: {
+                        items: 1
+                    }
+                }
+            });
+
+            $('.doctor_slider').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: [
+                    " <i class='fa-solid fa-arrow-left'></i>",
+                    "<i class='fa-solid fa-arrow-right'</i>"
+                ],
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 3
+                    },
+                    1024: {
+                        items: 3
+                    }
+                }
+            });
+
+            $('.partner_slider').owlCarousel({
+                loop: true,
+                margin: 15,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1024: {
+                        items: 5
+                    }
+                }
             });
 
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
