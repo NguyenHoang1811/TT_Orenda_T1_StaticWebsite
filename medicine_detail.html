@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 
 <body>
@@ -311,35 +315,45 @@
 
     <div style="background-color: #F6F9FB;">
         <div class="medicine_detail_link my-3">
-            <div class="container d-flex gap-2">
+            <div class="container d-sm-flex gap-2">
                 <div style="color: #3580DB;">Nhà thuốc </div>
-                <div>></div>
-                <div style="color: #3580DB;"> Hỗ trợ điều trị </div>
-                <div>></div>
-                <div> Chi tiết thuốc</div>
+
+                <div> > <span style="color: #3580DB;">Hỗ trợ điều trị</span></div>
+
+                <div><span>></span> Chi tiết thuốc</div>
             </div>
         </div>
 
         <div class="container">
             <div class="medicine_detail_box">
-                <div class="row">
-                    <div class="medicine_detail_box_img col-lg-5 col-12">
-                        <img class="img-fluid w-100" src="assets/images/medicine_detail_img_1.png" alt="anh">
-                        <div class="medicine_detail_img_list d-lg-flex justify-content-between m-2">
-                            <div class="medicine_detail_img_list_item">
-                                <img class="img-fluid w-100" src="assets/images/medicine_detail_img_2.png" alt="anh">
+                <div class="row p-2">
+                    <div class="medicine_detail_box_img col-lg-5 col-12 mb-4 mb-lg-0">
+                        <div class="main-image-container border rounded mb-3 p-2 text-center">
+                            <img id="mainProductImage" class="img-fluid" src="assets/images/medicine_detail_img_1.png"
+                                alt="anh" style="max-height: 100%; object-fit: contain;">
+                        </div>
+
+                        <div class="medicine_detail_img_list owl-carousel owl-theme">
+                        
+                            <div class="thumb-item">
+                                <img class="img-fluid w-100 rounded" src="assets/images/medicine_detail_img_2.png"
+                                    alt="anh">
                             </div>
-                            <div class="medicine_detail_img_list_item">
-                                <img class="img-fluid w-100" src="assets/images/medicine_detail_img_3.png" alt="anh">
+                            <div class="thumb-item">
+                                <img class="img-fluid w-100 rounded" src="assets/images/medicine_detail_img_3.png"
+                                    alt="anh">
                             </div>
-                            <div class="medicine_detail_img_list_item">
-                                <img class="img-fluid w-100" src="assets/images/medicine_detail_img_4.png" alt="anh">
+                            <div class="thumb-item">
+                                <img class="img-fluid w-100 rounded" src="assets/images/medicine_detail_img_4.png"
+                                    alt="anh">
                             </div>
-                            <div class="medicine_detail_img_list_item">
-                                <img class="img-fluid w-100" src="assets/images/medicine_detail_img_5.png" alt="anh">
+                            <div class="thumb-item">
+                                <img class="img-fluid w-100 rounded" src="assets/images/medicine_detail_img_5.png"
+                                    alt="anh">
                             </div>
                         </div>
                     </div>
+
                     <div class="medicine_detail_box_detail col-lg-7 col-12">
                         <div class="fw-bold h3 my-3">
                             Thymolin - Tăng cường sức đề kháng
@@ -348,41 +362,44 @@
                             195.000đ
                         </div>
                         <div class="my-2">Thymolin là sản phẩm giúp tăng cường sức đề kháng, hỗ trợ nâng cao hệ miễn
-                            dịch được sản
-                            xuất bởi Winpharma – đơn vị chuyên nghiên cứu và phát triển các sản phẩm sức khoẻ hàng đầu
+                            dịch được sản xuất bởi Winpharma – đơn vị chuyên nghiên cứu và phát triển các sản phẩm sức
+                            khoẻ hàng đầu
                             tại Việt Nam.</div>
                         <div class="fw-bold h5 my-3" style="color: #2A50AA;">
                             Ưu điểm nổi bật
                         </div>
                         <ul class=" my-3">
                             <li class=" my-3">Sản phẩm có hàm lượng cao nhưng giá thành vừa phải, phù hợp với nhu cầu
-                                của đại đa số
-                                người sử dụng.</li>
+                                của đại đa số người sử dụng.</li>
                             <li class=" my-3">Được sản xuất bởi nhà máy đạt chuẩn GMP-WHO đảm bảo chất lượng tốt nhất.
                             </li>
                             <li class=" my-3">Thành phần có hoạt tính thiên nhiên, an toàn, không tác dụng phụ.</li>
                         </ul>
-                        <div class="d-flex gap-3 my-3">
-                            <div class="d-flex align-items-center">
+                        <div class="row mx-0 my-3">
+                            <div
+                                class="quantity col-md-5 col-sm-6 col-12 d-flex align-items-center justify-content-center p-0">
                                 <div
-                                    style="border: 1px solid #E4E8ED;padding: 5px; border-radius:10px 0 0 10px ;padding: 10px 20px;">
+                                    style="border: 1px solid #E4E8ED;padding: 5px; border-radius:48px 0 0 48px ;padding: 10px 20px; cursor: pointer;">
                                     <i class="fa-solid fa-minus"></i>
                                 </div>
-                                <div style="border: 1px solid #E4E8ED;padding: 5px;width: 50%;padding: 10px 20px;">
+                                <div class="text-center "
+                                    style="border-top: 1px solid #E4E8ED; border-bottom: 1px solid #E4E8ED; padding: 5px;width: 50%;padding: 10px 20px;">
                                     1
                                 </div>
-                                <div class="rounded-end-pill"
-                                    style="border: 1px solid #E4E8ED;padding: 5px;border-radius: 0 10px 10px 0  ;padding: 10px 20px;">
+                                <div
+                                    style="border: 1px solid #E4E8ED;padding: 5px;border-radius: 0 48px 48px 0;padding: 10px 20px; cursor: pointer;">
                                     <i class="fa-solid fa-plus"></i>
                                 </div>
                             </div>
-                            <button class="rounded-pill text-white fw-bold border-0"
-                                style="background-color: #3580DB; width: 70%;padding: 10px 20px;">Chọn mua</button>
+                            <div class="col-md-7 col-sm-6 col-12 text-center text-md-start mt-3 mt-sm-0 p-0 ps-sm-3">
+                                <button class="rounded-pill text-white fw-bold border-0 w-100"
+                                    style="background-color: #3580DB; padding: 12px 20px;">Chọn mua</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="medicine_detail_description my-3">
+            <div class="medicine_detail_description my-3 ">
                 <div class="row">
                     <div class="col-lg-3 col-12">
                         <ul class="list-unstyled">
@@ -471,20 +488,12 @@
                     </div>
                 </div>
             </div>
-            <div class="medicine py-3">
+            <div class="medicine_list py-3">
                 <div class="container d-flex flex-column align-items-center">
-                    <div class="d-flex justify-content-between align-items-center mb-3 w-100">
+                    <div class="d-flex justify-content-start align-items-center mb-3 w-100">
                         <h1><b>Sản phẩm liên quan</b></h1>
-                        <div class="d-flex gap-3">
-                            <div class="arrow border rounded-circle p-2">
-                                <i class="fa-solid fa-arrow-left"></i>
-                            </div>
-                            <div class="arrow border rounded-circle p-2">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </div>
-                        </div>
                     </div>
-                    <div class="medicine_box mb-5">
+                    <div class="medicine_box doctor_slider owl-carousel owl-theme mb-5">
                         <div class="medicine_items">
                             <div class="promotion">20%</div>
                             <div class="medicine_img">
@@ -896,21 +905,77 @@
     </footer>
 
 
-    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
-        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    < <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous">
+        </script>
 
-    <script>
-        let mybutton = document.getElementById("backToTop");
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            let mybutton = document.getElementById("backToTop");
+
+            mybutton.addEventListener("click", backToTop);
+
+            function backToTop() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+            $(document).ready(function () {
+                $('.doctor_slider').owlCarousel({
+                    loop: true,
+                    margin: 15,
+                    nav: true,
+                    navText: [
+                        " <i class='fa-solid fa-arrow-left'></i>",
+                        "<i class='fa-solid fa-arrow-right'</i>"
+                    ],
+                    dots: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        576: {
+                            items: 3
+                        },
+                        768: {
+                            items: 4
+                        },
+                        1024: {
+                            items: 5
+                        }
+                    }
+                });
+
+                
+                $('.medicine_detail_img_list').owlCarousel({
+                    loop: false,             
+                    margin: 10,          
+                    nav: false,              
+                    dots: false,            
+                    responsive: {
+                        0: { items: 1 },     
+                        400: { items: 3 },   
+                        768: { items: 4 }   
+                    }
+                });
+
+                $('.thumb-item').click(function () {
+                   
+                    var newSrc = $(this).find('img').attr('src');
+
+                    $('#mainProductImage').fadeOut(150, function () {
+                        $(this).attr('src', newSrc).fadeIn(150);
+                    });
+
+                    $('.thumb-item').removeClass('active');
 
 
-        mybutton.addEventListener("click", backToTop);
-
-        function backToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+                    $(this).addClass('active');
+                });
+            });
+        </script>
 </body>
 
 </html>
