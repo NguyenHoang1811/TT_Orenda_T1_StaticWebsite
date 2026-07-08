@@ -6,6 +6,11 @@
     padding: 0 15px;
 }
 
+.no-underline {
+    text-decoration: none !important;
+}
+
+
 .ff_SF_Pro_Display {
     font-family: SF Pro Display;
 }
@@ -438,6 +443,26 @@ footer .call svg {
     display: none;
     margin-top: 10px;
     text-align: justify;
+}
+
+.clinic_reason_answer{
+    display: none;
+}
+
+.clinic_reason_tittle .svg-active {
+    display: none;
+}
+
+.clinic_reason_tittle.active .svg-active {
+    display: block;
+}
+.clinic_reason_tittle.active .svg-default {
+    display: none;
+}
+
+.pharmacy_action_object_price_items{
+    margin-top: 10px;
+    /* display: none; */
 }
 
 .booking_now {
@@ -1191,7 +1216,6 @@ footer .call svg {
     top: 35%;
     transform: translateY(-50%) !important;
     margin: 0 !important;
-
 
     background-color: #fff !important;
     color: #7D8D9A !important;
